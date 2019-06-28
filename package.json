@@ -1,0 +1,19 @@
+{
+	"name": "樊登读书",
+	"main": "https://www.dushu.io",
+	"inject_js_end": "./injector.js",
+	"width": 1280,
+	"height": 720,
+	"window": {
+		"min_width": 800,
+		"min_height": 800,
+		"max_width": 1280,
+		"max_height": 720,
+		"width": 1280,
+		"height": 720,
+		"resiziable": true
+	},
+	"dependencies": {
+		"jszip": "^3.2.1"
+	}
+}
