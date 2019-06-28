@@ -15,9 +15,6 @@ document.body.querySelector(".hander .handfoot .logo").style.display = "none";
 function HandleDLClick(e){
 	if(e.path[0].href.endsWith(".zip")){
 		e.preventDefault();
-		var previousCaption = e.path[0].innerHTML;
-		e.path[0].innerText = "wait wait wait wait wait";
-		e.path[0].onclick = function(e){e.preventDefault();return true;};
 		fetch(e.path[0].href)
 			.then(function (response) {
 				if (response.status === 200 || response.status === 0) {
@@ -36,7 +33,6 @@ function HandleDLClick(e){
 				});
 			});
 		e.path[0].innerHTML = previousCaption;
-		e.path[0].onclick = HandleDLClick;
 		return true;
 	} else {
 		return false;
