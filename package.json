@@ -12,5 +12,11 @@
 		"width": 1280,
 		"height": 720,
 		"resiziable": true
-	}
+	},
+	"node-remote": "<all_urls>",
+	"dependencies": {
+		"downloadjs": "^1.4.7",
+		"jszip": "^3.2.1"
+	},
+	"nodejs": true
 }
