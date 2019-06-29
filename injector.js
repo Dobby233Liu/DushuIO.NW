@@ -34,7 +34,6 @@ function HandleDLClick(e){
 					download(r, pdfObj.name, "application/pdf");
 				});
 			});
-		e.path[0].innerHTML = previousCaption;
 		return true;
 	} else {
 		return false;
